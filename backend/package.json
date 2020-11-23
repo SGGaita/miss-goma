@@ -1,0 +1,17 @@
+{
+  "name": "missgoma-server",
+  "version": "1.0.0",
+  "description": "serves Miss Goma website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Nodemailer",
+    "Multer"
+  ],
+  "author": "Steve Gaita",
+  "license": "ISC"
+}
