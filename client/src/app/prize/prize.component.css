@@ -1,0 +1,22 @@
+.prize{
+    height: 100vh;
+    background-image: linear-gradient(to right,#fbdb76, #fdc30d );
+}
+
+.prize .image img{
+width:100%
+}
+
+.prize .content h4{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.prize .content h4 .miss-color{
+    color: #f02625;
+    font-weight: 800;
+}
+
+.prize .content p{
+    font-size: x-large;
+}

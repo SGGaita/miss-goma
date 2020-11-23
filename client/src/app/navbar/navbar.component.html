@@ -9,17 +9,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" routerLinkActive="./">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="./">Home <span class="sr-only">(current)</span></a>
         </li>
          <li class="nav-item">
           <a class="nav-link" href="#">About</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" (click)="onClickScroll('competition')">Competition</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" (click)="onClickScroll('prize')">Prize</a>
+        </li>
+
          <li class="nav-item">
           <a class="nav-link" routerLink="./contestants">Contestants</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Competition</a>
+          <a class="nav-link" (click)="onClickScroll('sponsors')">Sponsors</a>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="http://www.twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </li>

@@ -1,0 +1,52 @@
+.competition{
+    height:auto;
+}
+
+.competition img{
+    width:60%;
+    height:60%
+}
+
+.competition h4{
+    color: #f4ab02;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.competition h6{
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #403f3f;
+}
+
+.competition ul{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.competition p{
+    text-align:left !important;
+    font-size:1.2rem
+} 
+
+.competition p strong{
+    font-weight: 800;
+}
+
+.competition p strong .date{
+    color:red
+}
+
+li{
+    list-style: disc;
+    
+    text-align: left;
+}
+
+li::before{
+    content: '';
+   display: inline-block;
+    list-style-image: url('../../assets/logo.png');
+    height:10px;
+    width:10px
+}

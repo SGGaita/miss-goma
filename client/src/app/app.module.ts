@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +15,10 @@ import { ContestantPageComponent } from './contestant-page/contestant-page.compo
 import { AboutComponent } from './about/about.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { FooterUpperComponent } from './footer-upper/footer-upper.component';
+import { PrizeComponent } from './prize/prize.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { RouterModule } from '@angular/router';
+import { CompetitonComponent } from './competiton/competiton.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +33,16 @@ import { FooterUpperComponent } from './footer-upper/footer-upper.component';
     ContestantPageComponent,
     AboutComponent,
     CopyrightComponent,
-    FooterUpperComponent
+    FooterUpperComponent,
+    PrizeComponent,
+    SponsorsComponent,
+    CompetitonComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
