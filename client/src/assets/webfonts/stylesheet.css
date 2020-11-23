@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Florencesans SC';
+    src: url('FlorencesansSC.eot');
+    src: local('Florencesans SC'), local('FlorencesansSC'),
+        url('FlorencesansSC.eot?#iefix') format('embedded-opentype'),
+        url('FlorencesansSC.woff2') format('woff2'),
+        url('FlorencesansSC.woff') format('woff'),
+        url('FlorencesansSC.ttf') format('truetype'),
+        url('FlorencesansSC.svg#FlorencesansSC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'missgoma';
+  title = 'Miss Goma 2021 | La Garante dela Paix';
 }

@@ -1,0 +1,14 @@
+.slogan{
+    
+    background-image: linear-gradient(to right,#f1c55c, #b98407, #f1c551 );
+    color: #fff;
+    padding: .7rem;
+    font-size: 1.1rem;
+    font-stretch: semi-expanded;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+span{
+    padding: .5rem 0 .5rem 0
+}

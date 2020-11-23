@@ -1,0 +1,30 @@
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: .5rem;
+    margin-left: 5rem; 
+    
+    white-space: nowrap;
+}
+
+.navbar-text {
+    display: inline-block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: white;
+    margin-top: 15px;
+}
+
+.bg-goma{
+    background: #161e3e;
+    border-bottom: #fdc30d 3px solid;
+    height: 95px;
+}
+
+img{
+    background: white;
+    padding: .7rem;
+    margin-top: -0.5rem;
+    border-radius: 0 0 0px 0px;
+}

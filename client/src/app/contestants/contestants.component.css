@@ -1,0 +1,43 @@
+.card img{
+   
+
+    padding: 5px;
+    
+}
+
+.card p{
+	margin-bottom: 0px !important
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.5rem 0.5rem;
+}
+
+.header-section span{
+    font-family: serif;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.details .name{
+	text-transform: uppercase;
+	font-family: 'Florencesans-SC-Exp-Bold';
+	font-size:0.9rem
+
+}
+
+.btn{
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

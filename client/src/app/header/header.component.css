@@ -1,0 +1,79 @@
+.header{
+    height: 100vh;
+        background-color:#1B2241;
+}
+
+.carousel-caption {
+    
+    right: 10%;
+    text-align: right;
+}
+
+.carousel-caption h5{
+    margin-top: 0px;
+    color:#f5b018;
+    font-size: 4rem
+}
+
+.carousel-caption h5 span.election{
+    font-size: 2.0rem;
+    font-weight: 100;
+    letter-spacing: -2px;
+    font-family: sans-serif;
+}
+
+.carousel-caption h5 span.miss{
+margin-top: -20px;
+    font-size: 5.5rem !important;
+    font-weight: 800;
+    font-family: revert;
+    letter-spacing: -2px;
+}
+
+.carousel-caption h5 span.goma{
+    margin-top: -30px;
+    font-size: 4.1rem !important;
+    font-weight: 800;
+    font-family: revert;
+    letter-spacing: -2px;
+    }
+
+    .carousel-caption h6{
+        font-weight: lighter;
+    margin-top: -20px;
+    font-size: 1.1rem;
+    font-family: revert;
+    }
+
+.carousel-caption {
+    margin-top:50px
+
+}
+.carousel-caption  .theme-1{
+font-size: 4.0rem;
+    
+    letter-spacing: -2px;
+}
+
+.carousel-caption  .theme-2{
+    font-size: 4.0rem;
+    margin-top: -40px;
+    font-weight: 700;
+    letter-spacing: -2px;
+       
+    }
+
+    .carousel-caption  .theme-3{
+        background:#f5b018;
+         color: #fff;
+         padding: 5px 10px;
+         font-size:1.5rem
+    }
+    
+    .carousel-caption  .theme-text{
+        border-top: white 1px solid;
+    border-right: white 1px solid;
+    left:50%;
+    padding-right: 15px;
+    border-radius: 0 7px 0;
+    }

@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Florencesans-SC-Exp-Bold';
+    src:url('./assets/webfonts/Florencesans-SC-Exp-Bold.ttf.woff') format('woff'),
+        url('./assets/webfonts/Florencesans-SC-Exp-Bold.ttf.svg#Florencesans-SC-Exp-Bold') format('svg'),
+        url('./assets/webfonts/Florencesans-SC-Exp-Bold.ttf.eot'),
+        url('./assets/webfonts/Florencesans-SC-Exp-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Florencesans SC';
+    src: url('./assets/webfonts/FlorencesansSC.eot');
+    src: local('Florencesans SC'), local('FlorencesansSC'),
+        url('./assets/webfonts/FlorencesansSC.eot?#iefix') format('embedded-opentype'),
+        url('./assets/webfonts/FlorencesansSC.woff2') format('woff2'),
+        url('./assets/webfonts/FlorencesansSC.woff') format('woff'),
+        url('./assets/webfonts/FlorencesansSC.ttf') format('truetype'),
+        url('./assets/webfonts/FlorencesansSC.svg#FlorencesansSC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+    
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Navbar*/
+.navbar-goma{
+    text-transform: uppercase;
+    
+}
+
+.navbar-goma .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-goma .navbar-nav .nav-link:hover {
+    color: #ECAE1D;
+    cursor: pointer
+}
+
+.navbar-goma .navbar-nav .nav-link.active {
+    color: #ECAE1D;
+}
+
+.btn{
+    
+  
+}
+
+
+.btn-outline-goma{
+    background-image: linear-gradient(to right,#f1c55c, #b98407, #f1c551 );
+    border: #c8951b solid 1px !important;
+    font-size:0.7rem;
+    color: white !important
+}
+
+.btn-outline-goma:hover {
+    background: white !important;
+    border:rgb(19, 19, 19)solid 1px !important;
+	color:black !important;
+}
+
+
+
+.card {
+    box-shadow: none !important;
+    margin-bottom: 1rem;
+}
+
+
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 85% !important;
+}
+}
+
