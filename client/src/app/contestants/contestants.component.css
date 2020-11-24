@@ -33,6 +33,17 @@
 cursor: pointer;
 }
 
+.btn-outline-dark{
+    background: #3a3838;
+    color: #fff;
+}
+
+.btn-outline-dark:hover{
+    background: white !important;
+    border: #3a3838 solid 1px !important;
+    color:#3a3838 !important
+}
+
 
 
 

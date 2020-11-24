@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contestant-page',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContestantPageComponent implements OnInit {
 
-  constructor() { }
+  pageTitle: string
+
+  constructor(private title: Title) { }
 
   ngOnInit(): void {
+
+    this.pageTitle = "Contestant 1 | Miss Goma"
+
+    this.title.setTitle(this.pageTitle)
   }
 
 }

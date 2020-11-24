@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import {ContestantService} from '../_services/contestant.service'
 
 @Component({
   selector: 'app-contestants',
@@ -6,12 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contestants.component.css']
 })
 export class ContestantsComponent implements OnInit {
+  contestants: [];
+  pageTitle: string;
 
-  contestants = [{id:1}, {id:2},{id:3}]
-
-  constructor() { }
+  constructor(private title: Title, private contestantService: ContestantService) { }
 
   ngOnInit(): void {
+
+    this.pageTitle = "Contestants | Miss Goma"
+
+    this.title.setTitle(this.pageTitle)
+
+    this.contestantService.getContestants()
+    .subscribe(data =>{
+      this.contestants = data
+    })
   }
 
 }
