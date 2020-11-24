@@ -1,5 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import {share} from 'rxjs/operators'
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  activeFragment = this.route.fragment.pipe(share());
+
+  constructor(private viewportScroller: ViewportScroller, public route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

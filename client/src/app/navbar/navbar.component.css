@@ -32,3 +32,21 @@ img{
 ul{
     font-family: 'Lato', sans-serif !important
 }
+
+.active{
+   
+    border-bottom: #ECAE1D solid 1px;
+}
+
+
+ul>li.active{
+    color:#ECAE1D !important;
+}
+
+.social-icons{
+    margin-left: -15px;
+}
+
+.social-icons-first{
+    margin-left:10px
+}
