@@ -9,22 +9,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item " [class.active]="(activeFragment | async)==='home'">
-          <a class="nav-link" routerLink="/" fragment="home" >Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/" fragment="home" >{{'NAVIGATION.Home' | translate}} <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item" [class.active]="(activeFragment | async)==='competition'" >
-          <a class="nav-link" routerLink="/" fragment="competition" >Competition</a>
+          <a class="nav-link" routerLink="/" fragment="competition" >{{'NAVIGATION.Competition' | translate}}</a>
         </li>
 
         <li class="nav-item" [class.active]="(activeFragment | async)==='prize'">
-          <a class="nav-link" routerLink="/" fragment="prize" >Prize</a>
+          <a class="nav-link" routerLink="/" fragment="prize" >{{'NAVIGATION.Prize' | translate}}</a>
         </li>
 
          <li class="nav-item" >
-          <a class="nav-link" routerLink="./contestants"  fragment="top" [routerLinkActive]="['active']">Contestants</a>
+          <a class="nav-link" routerLink="./contestants"  fragment="top" [routerLinkActive]="['active']">{{'NAVIGATION.Contestants' | translate}}</a>
         </li>
 
         <li class="nav-item" [class.active]="(activeFragment | async)==='sponsors'">
-          <a class="nav-link" routerLink="/" fragment="sponsors" >Sponsors</a>
+          <a class="nav-link" routerLink="/" fragment="sponsors" >{{'NAVIGATION.Sponsors' | translate}}</a>
         </li>
         
         <li class="nav-item social-icons-first">
@@ -41,6 +41,11 @@
         
         <li class="nav-item social-icons">
           <a class="nav-link" href="https://www.youtube.com/channel/UCepUKBM5Gyq5pbPBroItgaw" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item translate mt-2 ml-4">
+          <select #langselect (change)="translate.use(langselect.value)">
+            <option *ngFor="let _lang of translate.getLangs()" [value]="_lang" [selected]="_lang[0]"> <img alt="flag"> {{_lang}}</option>
+          </select>
         </li>
       </ul>
       

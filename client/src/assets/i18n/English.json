@@ -1,0 +1,67 @@
+{
+  "NAVIGATION": {
+    "Home": "Home",
+    "Competition": "Contest",
+    "Prize": "Prize",
+    "Contestants": "Contestants",
+    "Sponsors": "Sponsors"
+
+  },
+
+  "HEADER": {
+    "Banner": "banner_en"
+  },
+
+  "COMPETITION": {
+    "Intro": "Would you like to experience the Miss Goma Adventure?",
+    "Intro2": "Voici les critères minimum de sélection:",
+    "Criteria1": "Be Congolese",
+    "Criteria2": "Have been born between 1st December 1992 and 1st January 2002;",
+    "Criteria3": "Be single without children (neither divorced nor widowed, etc.);",
+    "Criteria4": "Be domiciled in the city of Goma",
+    "Ending1": "You must first",
+    "Ending2": "register before",
+    "Date": " November 27 2020"
+
+  },
+
+  "PRIZE": {
+    "Heading1": "WHAT IF",
+    "Heading2": "MISS GOMA",
+    "Heading3": "WAS YOU?",
+    "Paragraph": "GET YOUR CROWN AND WIN YOUR CAR",
+    "Image": "vehicle_en"
+  },
+
+  "SPONSORS": {
+    "Heading1": "Sponsors"
+  },
+
+  "CONTACTS": {
+    "Contacts": "Contact us",
+    "Follow": "Follow us on"
+  },
+
+  "COPYRIGHT":{
+    "All-rights":"All rights reserved"
+  },
+
+  "CONTESTANTS": {
+    "Heading":"CONTESTANTS",
+    "View-profile":"View profile",
+    "Cast-vote": "Cast Vote",
+    "Voting-closed":"Voting Closed",
+    "Age": "Age",
+    "Watch":"Watch video"
+
+  },
+  "THANKYOU": {
+
+  },
+  "PNG": {
+    "Error": "404 Error - Page Not Found",
+    "Message": "We're sorry, the page you requested could not be found. Please return to the home page or contact support at missgoma2021@gmail.com",
+    "Button": "Home page"
+
+  }
+}

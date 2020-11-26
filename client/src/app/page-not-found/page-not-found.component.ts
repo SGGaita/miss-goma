@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-main-home',
-  templateUrl: './main-home.component.html',
-  styleUrls: ['./main-home.component.css']
+  selector: 'app-page-not-found',
+  templateUrl: './page-not-found.component.html',
+  styleUrls: ['./page-not-found.component.css']
 })
-export class MainHomeComponent implements OnInit {
+export class PageNotFoundComponent implements OnInit {
 
-  pageTitle = "HOME | Miss Goma 2021"
+  pageTitle = "Page not found | Miss Goma"
 
   constructor(private title: Title) { }
 
