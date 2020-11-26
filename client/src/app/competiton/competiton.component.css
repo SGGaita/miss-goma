@@ -3,8 +3,8 @@
 }
 
 .competition img{
-    width:60%;
-    height:60%
+    width:20%;
+    height:20%
 }
 
 .competition h4{
@@ -25,8 +25,9 @@
 }
 
 .competition p{
-    text-align:left !important;
-    font-size:1.2rem
+    text-align: left !important;
+    font-size: 1rem;
+    font-weight: 700;
 } 
 
 .competition p strong{
@@ -49,4 +50,31 @@ li::before{
     list-style-image: url('../../assets/logo.png');
     height:10px;
     width:10px
+}
+
+.programme h4{
+    font-size: 1rem;
+    background: #000000d1;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.programme p.date{
+    margin-bottom: 1px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.programme p.event{
+    margin-bottom: 1px;
+    font-size: 1rem;
+    
+}
+
+.px-10{
+    padding: 0 100px
+}
+
+a{
+    color:#f4ab02;
 }

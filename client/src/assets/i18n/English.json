@@ -13,12 +13,14 @@
   },
 
   "COMPETITION": {
-    "Intro": "Would you like to experience the Miss Goma Adventure?",
+    "Intro": "Un concours des Valueurs culture valorisant la femme Africaine",
+    "Intro1": "Would you like to experience the Miss Goma Adventure?",
     "Intro2": "Voici les critères minimum de sélection:",
     "Criteria1": "Be Congolese",
     "Criteria2": "Have been born between 1st December 1992 and 1st January 2002;",
     "Criteria3": "Be single without children (neither divorced nor widowed, etc.);",
     "Criteria4": "Be domiciled in the city of Goma",
+    "Criteria5": "Blank judicial record",
     "Ending1": "You must first",
     "Ending2": "register before",
     "Date": " November 27 2020"

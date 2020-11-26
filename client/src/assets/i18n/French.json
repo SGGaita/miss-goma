@@ -1,7 +1,7 @@
 {
   "NAVIGATION": {
     "Home": "Accueil",
-    "Competition": "Concours",
+    "Competition": "About",
     "Prize": "Prix",
     "Contestants": "Concurrentes",
     "Sponsors": "Les sponsors"
@@ -13,12 +13,14 @@
   },
 
   "COMPETITION": {
-   "Intro": "Souhaitez-vous vivre l'Aventure Miss Goma?",
+    "Intro": "Un concours des Valueurs culture valorisant la femme Africaine",
+   "Intro1": "Souhaitez-vous vivre l'Aventure Miss Goma?",
    "Intro2": "Voici les critères minimum de sélection:",
    "Criteria1": "Être congolaise",
    "Criteria2": "Être née entre le 1er Javier 2002 et 1er December 1992;",
    "Criteria3": "Être célibataire sans enfants(ni divorcée, ni veuve, ect.);",
-   "Criteria4": "Être congolaise",
+   "Criteria4": "Être domicilée dans la ville de Goma",
+   "Criteria5": "Casier judiciarie vierge",
    "Ending1":"Vous devez au préalable",
    "Ending2":"vous inscrire avant",
    "Date":"le 27 November 2020" 
