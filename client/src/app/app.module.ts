@@ -26,6 +26,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { AdminComponent } from './admin/admin.component';
     ThankYouComponent,
     LoginComponent,
     PageNotFoundComponent,
-    AdminComponent
+    AdminComponent,
+    DashboardComponent
     
   ],
   imports: [

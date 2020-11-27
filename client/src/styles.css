@@ -28,8 +28,8 @@ html{
     font-family: 'Lato', sans-serif !important;
 }
 
-body{
-    
+[id]{
+scroll-margin-top: 70px;
 }
 
 
@@ -80,10 +80,86 @@ body{
 }
 
 
+/*custom widths*/
+@media (min-width: 576px)
+{
+    .w-sm-25{
+        width:25%  !important;
+    }
+    
+    .w-sm-50{
+        width:50%  !important;
+    }
+    
+    .w-sm-75{
+        width:75%  !important;
+    }
+    
+    .w-sm-100{
+        width:100%  !important;
+    }
+}
+
+
+ 
+@media (min-width: 768px) { 
+    .w-md-25{
+        width:25%  !important;
+    }
+    
+    .w-md-50{
+        width:50%  !important;
+    }
+    
+    .w-md-75{
+        width:75%  !important;
+    }
+    
+    .w-md-100{
+        width:100%  !important;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .w-lg-25{
+        width:25%  !important;
+    }
+    
+    .w-lg-50{
+        width:50%  !important;
+    }
+    
+    .w-lg-75{
+        width:75%  !important;
+    }
+    
+    .w-lg-100{
+        width:100%  !important;
+    }
+ }
+
+
+
 
 @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 85% !important;
+}
+
+.w-xl-25{
+    width:25%  !important;
+}
+
+.w-xl-50{
+    width:50%  !important;
+}
+
+.w-xl-75{
+    width:75%  !important;
+}
+
+.w-xl-100{
+    width:100%  !important;
 }
 }
 

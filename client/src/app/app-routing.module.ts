@@ -9,6 +9,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component'
 import { LoginComponent } from './login/login.component';
 import {AdminComponent} from './admin/admin.component'
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
 {path: '', component: MainHomeComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   component: AdminComponent,
   children: [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
-    {path: 'login', component: LoginComponent}]},
+    {path: 'login', component: LoginComponent},
+  {path: 'dashboard', component: DashboardComponent}]},
 { path: '**', component: PageNotFoundComponent }
 ];
 
