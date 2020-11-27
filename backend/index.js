@@ -3,10 +3,14 @@ bodyParser = require('body-parser'),
 morgan = require('morgan'),
 cors = require('cors');
 path = require('path');
+dotenv = require('dotenv');
+
+
+dotenv.config();
 
 
 var app = express()
-    port = process.env.PORT || 3000
+    port = process.env.PORT
 
 //Parse as urlencoded and json.
 app.use(bodyParser.urlencoded({extended:false}));
