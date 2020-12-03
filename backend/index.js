@@ -12,6 +12,8 @@ dotenv.config();
 var app = express()
     port = process.env.PORT
 
+    console.log("DATABASE PARAMS", process.env.DB_HOST, process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASS,process.env.DB_DIALECT)
+
 //Parse as urlencoded and json.
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -32,6 +34,12 @@ next(); });
 // Catch all other routes and return the index file
 //app.get('/*', (req, res) => { res.sendFile(path.join(__dirname, 'public/index.html'));
 //}); 
+
+//import routes from /routes/allRoutes.js
+var allRoutes = require('./routes/allRoutes')
+
+//adding routes
+app.use('/api', allRoutes);
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
