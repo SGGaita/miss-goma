@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule,NoopAnimationsModule} from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from "@angular/common/http";
@@ -66,6 +68,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
       },
       defaultLanguage: 'French'
     }),
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule
    
   ],
   providers: [],

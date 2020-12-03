@@ -6,27 +6,35 @@
 
           <h4 class="text-dark">MISS GOMA</h4>
           <p class="text-dark">Enter your login credentials</p>
+          <div class="text-danger text-left feedback" *ngIf="errorMsg">{{errorMsg}}</div>
+          <div class="text-info text-left feedback" *ngIf="loading">
+            <img
+              src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+            {{loadingMsg}}</div>
         </div>
-        <div class="card-body">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">@</span>
+        <div class="card-body"> 
+          <form action="" [formGroup]="loginForm" (ngSubmit)="login()"> 
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="username" aria-label="userName" id="userName" name="userName" formControlName="userName"
+                aria-describedby="basic-addon1">
             </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-              aria-describedby="basic-addon1">
-          </div>
-
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">*</span>
+  
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">*</span>
+              </div>
+              <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="password" name="password" formControlName="password"
+                aria-describedby="basic-addon1">
             </div>
-            <input type="password" class="form-control" placeholder="Password" aria-label="Username"
-              aria-describedby="basic-addon1">
-          </div>
-
-          <div class="input-group mb-3">
-            <button class="btn btn-outline-dark d-block w-100 m-2">Login</button>
-            </div>
+  
+            <div class="input-group mb-3">
+              <button type="submit" class="btn btn-outline-dark d-block w-100 m-2">Login</button>
+              </div>
+          </form>
+          
 
 
 

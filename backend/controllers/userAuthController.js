@@ -59,7 +59,7 @@ const addNewUser = (req, res, next) => {
 //Login User
 const loginUser = (req, res) => {
     User.findOne({
-        where: Sequelize.or({ email: req.body.email }, { userName: req.body.userName })
+        where: Sequelize.or({ userName: req.body.userName })
     }
     )
         .then(user => {

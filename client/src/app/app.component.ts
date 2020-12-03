@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationService } from './_auth/authentication.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'Miss Goma 2021 | La Garante dela Paix';
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, public auth: AuthenticationService) { }
 
   ngOnInit() {
  }
