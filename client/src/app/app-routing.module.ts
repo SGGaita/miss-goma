@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContestantPageComponent } from './contestant-page/contestant-page.component';
 import { ContestantsComponent } from './contestants/contestants.component';
+import { AdminContestantsComponent } from './admin/admin-contestants/admin-contestants.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { PrizeComponent } from './prize/prize.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
   children: [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent}]},
+  {path: 'dashboard', component: DashboardComponent},
+{path: 'contestants', component: AdminContestantsComponent}]},
 { path: '**', component: PageNotFoundComponent }
 ];
 

@@ -152,7 +152,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>-->
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">{{fname}} {{lname}}</a>
         </div>
       </div>
 
@@ -170,49 +170,64 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a routerLink="/admin/orders" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Contestants
-                </p>
-            </a>
-          </li>
+         
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+            <a routerLink="/admin/competition" class="nav-link">
+              <i class="nav-icon fas fa-trophy"></i>
               <p>
                Competition
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                <a routerLink="/admin/contestants" class="nav-link">
+                  <i class="fas fa-user-friends"></i>
+                  <p>
+                    Contestants
+                    </p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
             <a routerLink="/admin/products" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fas fa-file"></i>
               <p>
-               Settings
+               Pages
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
         
           </li>
-       
           <li class="nav-item has-treeview">
+            <a routerLink="/admin/products" class="nav-link">
+              <i class="nav-icon fas fa-cog"></i>
+              <p>
+               Settings
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a routerLink="/admin/user-account" class="nav-link">
+                  <i class="fas fa-user"></i>
+                  <p>
+                    User accounts
+                    </p>
+                </a>
+              </li>
+            </ul>
+        
+          </li>
+       
+          <li class="nav-item logout">
             <a (click)="this.auth.logout()" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
               Logout
-                <i class="fas fa-angle-left right"></i>
+                
               </p>
             </a>            
           </li>
@@ -258,7 +273,7 @@
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark" >
+  <aside class="control-sidebar control-sidebar-dark" *ngIf="auth.isLoggedIn()">
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
