@@ -29,6 +29,11 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminPagesComponent } from './admin-pages/admin-pages.component';
+import { AdminUsersComponent } from './admin-users/admin-users.component';
+import { AdminContestantsListComponent } from './admin-contestants-list/admin-contestants-list.component';
+import { AdminContestantCreateComponent } from './admin-contestant-create/admin-contestant-create.component';
+import { AdminContestantComponent } from './admin/admin-contestant/admin-contestant.component';
 
 
 @NgModule({
@@ -52,7 +57,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginComponent,
     PageNotFoundComponent,
     AdminComponent,
-    DashboardComponent
+    DashboardComponent,
+    AdminPagesComponent,
+    AdminUsersComponent,
+    AdminContestantsListComponent,
+    AdminContestantCreateComponent,
+    AdminContestantComponent
     
   ],
   imports: [

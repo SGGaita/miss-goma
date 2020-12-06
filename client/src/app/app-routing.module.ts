@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContestantPageComponent } from './contestant-page/contestant-page.component';
 import { ContestantsComponent } from './contestants/contestants.component';
-import { AdminContestantsComponent } from './admin/admin-contestants/admin-contestants.component';
+import { AdminContestantComponent } from './admin-contestant/admin-contestant.component';
+import {AdminContestantsListComponent} from './admin-contestants-list/admin-contestants-list.component';
+import {AdminContestantCreateComponent} from './admin-contestant-create/admin-contestant-create.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { PrizeComponent } from './prize/prize.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
@@ -27,7 +29,11 @@ const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent},
-{path: 'contestants', component: AdminContestantsComponent}]},
+{path: 'contestants', component: AdminContestantComponent,
+children:[
+  {path: '', redirectTo: 'list', pathMatch: 'full'},
+  {path: 'list', component: AdminContestantsListComponent},
+{path: 'create', component: AdminContestantCreateComponent}]}]},
 { path: '**', component: PageNotFoundComponent }
 ];
 

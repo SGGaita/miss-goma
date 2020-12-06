@@ -22,8 +22,8 @@ export class AppComponent {
   console.log("Customer token", Token)
   var decoded = jwt_decode(Token);
   console.log("Decoded token", decoded)
-  this.fname = decoded.fname;
-  this.lname = decoded.lname;
+  //this.fname = decoded.fname;
+  //this.lname = decoded.lname;
   
     
  }
