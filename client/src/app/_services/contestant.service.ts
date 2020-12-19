@@ -4,7 +4,7 @@ import { map, catchError } from 'rxjs/operators';
 
 import 'rxjs/operators';
 import { HttpErrorResponse, HttpClient, HttpHeaders } from '@angular/common/http';
-import { environment } from '../../environments/environment';
+import { environment } from '../../environments/environment.prod';
 import { ContestantModelServer } from '../_models/contestant';
 
 @Injectable({
