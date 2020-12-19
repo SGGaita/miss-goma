@@ -1,4 +1,4 @@
-export class Contestant {
+export class ContestantModelServer {
     id: number;
     fname: string;
     lname: string;
@@ -8,3 +8,11 @@ export class Contestant {
     images: string;
 
 }
+
+
+
+export interface ContestantServerResponse{
+    count:number;
+    contestants: ContestantModelServer[]
+}
+

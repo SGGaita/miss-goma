@@ -33,13 +33,13 @@ export class ContestantPageComponent implements OnInit {
     ).subscribe(contId => {
       this.id = contId;
 
-    this.contestantService.getContestantById(this.id).subscribe(data=>{
+    this.contestantService.getSingleContestant(this.id).subscribe(data=>{
       this.contestant = data
-      this.fname = this.contestant.map(x=>x.fname)
-      this.lname = this.contestant.map(x=>x.lname)
-      this.description = this.contestant.map(x=>x.description)
+      this.fname = this.contestant.map(x=>x.contestant_fname)
+      this.lname = this.contestant.map(x=>x.contestant_lname)
+      this.description = this.contestant.map(x=>x.contestant_description)
       this.image = this.contestant.map(x=>x.image)
-      this.age = this.contestant.map(x=>x.age)
+    
 
       //set page title
       this.pageTitle = this.fname + " " + this.lname + " |" + " Miss Goma 2021"

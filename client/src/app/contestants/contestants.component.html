@@ -6,7 +6,7 @@
     <div class="col-sm-12 text-center">
       <div class="row">
 
-        <div class="col-sm-4" *ngFor="let contestant of contestants">
+        <div class="col-sm-3" *ngFor="let contestant of contestants">
 
           <div class="card border-0">
             <div class="card-body">
@@ -20,13 +20,14 @@
                   <p class="name">{{contestant.fname}} {{contestant.lname}}</p>
                   <p class="age">{{'CONTESTANTS.Age' | translate}} {{contestant.age}}</p>
                 </span>
-                <span>
-                  <a class="btn btn-outline-dark d-block w-100 border-0" routerLink="../contestant/{{contestant.id}}">{{'CONTESTANTS.View-profile' | translate}}</a>
-                </span>
+                <!--span>
+                  <a class="btn btn-outline-dark d-block w-100 border-0" routerLink="../contestant/{{contestant.id_contestant}}">{{'CONTESTANTS.View-profile' | translate}}</a>
+                </!>-->
               </div>
 
 
-              <button class="btn btn-outline-goma d-block w-100 " (click)="castVote(contestant.id)">{{'CONTESTANTS.Cast-vote' | translate}}</button>
+              <!--<button class="btn btn-outline-goma d-block w-100 " (click)="castVote(contestant.id)">{{'CONTESTANTS.Cast-vote' | translate}}</>!-->
+              <button class="btn btn-outline-goma d-block w-100 disabled" (click)="vote()">{{'CONTESTANTS.Voting-closed' | translate}}</button>
             </div>
           </div>
         </div>

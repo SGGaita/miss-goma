@@ -20,3 +20,46 @@ width:100%
 .prize .content p{
     font-size: x-large;
 }
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .prize .content h4 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .competition img {
+        width: 40%;
+        height: 20%;
+    }
+
+    .prize .content h4 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    .competition img {
+        width: 40%;
+        height: 20%;
+    }
+
+    .prize .content h4 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .prize {
+        height: fit-content;
+        background-image: linear-gradient(to right,#fbdb76, #fdc30d );
+    }
+ }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }

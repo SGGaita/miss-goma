@@ -1,7 +1,7 @@
 {
   "NAVIGATION": {
     "Home": "Accueil",
-    "Competition": "About",
+    "Competition": "À propos",
     "Prize": "Prix",
     "Contestants": "Concurrentes",
     "Sponsors": "Les sponsors"
@@ -24,6 +24,11 @@
    "Ending1":"Vous devez au préalable",
    "Ending2":"vous inscrire avant",
    "Date":"le 27 November 2020" 
+  },
+
+  "LEADERBOARD":{
+    "Intro": "Leaderboard Hebdomadaire",
+    "Vote" : "Procéder au vote"
   },
 
   "PRIZE":{

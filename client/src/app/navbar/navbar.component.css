@@ -8,6 +8,14 @@
     white-space: nowrap;
 }
 
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..") !important;
+  }
+
+.navbar-collapse{
+    background: #161e3ee3;
+} 
+
 .navbar-text {
     display: inline-block;
     padding-top: .5rem;
@@ -51,6 +59,91 @@ ul>li.active{
     margin-left:10px
 }
 
-.translate{
-    
-}
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .navbar-brand{
+        display: inline-block;
+        padding-top: 0rem;
+        padding-bottom: .3125rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        white-space: nowrap;
+    }
+
+    img{
+        background: white;
+        padding: .7rem;
+        margin-top: -0.5rem;
+        border-radius: 0 0 0px 0px;
+        width:80px;
+        height:auto
+    }
+
+    .bg-goma {
+        background: #161e3e;
+        border-bottom: #fdc30d 3px solid;
+        height: 83px;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .navbar-brand{
+        display: inline-block;
+        padding-top: 0rem;
+        padding-bottom: .3125rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        white-space: nowrap;
+    }
+
+    img{
+        background: white;
+        padding: .7rem;
+        margin-top: -0.5rem;
+        border-radius: 0 0 0px 0px;
+        width:80px;
+        height:auto
+    }
+
+    .bg-goma {
+        background: #161e3e;
+        border-bottom: #fdc30d 3px solid;
+        height: 83px;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    .navbar-brand{
+        display: inline-block;
+        padding-top: 0rem;
+        padding-bottom: .3125rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        white-space: nowrap;
+    }
+
+    img{
+        background: white;
+        padding: .7rem;
+        margin-top: -0.5rem;
+        border-radius: 0 0 0px 0px;
+        width:80px;
+        height:auto
+    }
+
+    .bg-goma {
+        background: #161e3e;
+        border-bottom: #fdc30d 3px solid;
+        height: 83px;
+    }
+ }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }

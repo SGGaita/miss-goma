@@ -45,6 +45,10 @@ cursor: pointer;
     color:#3a3838 !important
 }
 
+.disabled{
+    cursor: not-allowed !important;
+}
+
 img:hover{
     width:98%;
     height:98%;

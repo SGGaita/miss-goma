@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
+
 const {database} = require('../config/db_apiRoutes');
 
-   
 
 //Get all contestants
 const getAllContestants = (req, res)=> { // Sending Page Query Parameter is mandatory http://localhost:3636/api/products?page=1
@@ -78,10 +78,16 @@ const getContestantById = (req, res) => {
 }
 
 // Add new Contestant
-const addNewContestant = async (req, res) => {
+/**const addNewContestant = async (req, res) => {
+
+    console.log("Contestant request body", req.body)
+      
+  
+
+
+
     
-    // let userId = req.body.userId;
-    //let data = JSON.parse(req.body);
+    
     console.log("This route works",new Date(req.body.date_of_birth))
     database. table ( 'contestants' ) 
     . insert ( { 
@@ -89,7 +95,7 @@ const addNewContestant = async (req, res) => {
         contestant_lname : req.body.contestant_lname,
         contestant_location: req.body.contestant_location,
         contestant_description: req.body.contestant_description,
-        image: req.body.image,
+        image: req.file.filename,
         date_of_birth: new Date(req.body.date_of_birth)
     } ) 
     . then ( (lastId)  =>  { 
@@ -101,9 +107,9 @@ const addNewContestant = async (req, res) => {
     }).catch(err => {res.json(err);
     console.log("This is the error generated", err)});
 
-}
+}*/
 
 
 
 
-module.exports = {getAllContestants, getContestantById, addNewContestant}
+module.exports = {getAllContestants, getContestantById}

@@ -78,3 +78,81 @@ li::before{
 a{
     color:#f4ab02;
 }
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .competition img {
+        width: 40%;
+        height: 20%;
+    }
+
+    .px-10{
+        padding: 0 10px;
+    }
+
+    .competition h4 {
+        padding-top: 30px;
+    color: #fdc30d;
+    font-weight: 800;
+    font-size: 1.5rem;
+    }
+
+    li:before {
+        content: '';
+        display: inline-block;
+        width: 0px;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .competition img {
+        width: 40%;
+        height: 20%;
+    }
+
+     .px-10{
+        padding: 0 0px;
+    }
+
+    .competition h4 {
+        padding-top: 30px;
+        color: #fdc30d;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    li:before {
+        content: '';
+        display: inline-block;
+        width: 0px;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    .competition img {
+        width: 40%;
+        height: 20%;
+    }
+
+     .px-10{
+        padding: 0 0px;
+    }
+
+    .competition h4 {
+        padding-top: 10px;
+        color: #fdc30d;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    li:before {
+        content: '';
+        display: inline-block;
+        width: 0px;
+    }
+ }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }

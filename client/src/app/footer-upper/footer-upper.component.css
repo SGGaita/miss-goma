@@ -39,3 +39,92 @@ ul.contact-list{
   li a:hover {
     color: #ECAE1D;
   }
+
+  /* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  .footer {
+    display: flex;
+    align-items: center;
+    background-color: #1B2241;
+    color: #ECAE1D;
+    padding: 20px 0;
+    height: fit-content;
+    text-align: center;
+}
+
+.contact{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social{
+  margin-top: 10px;
+  margin-bottom:10px
+}
+
+.social-icons{
+  justify-content: center;
+    display: flex;
+}
+
+span ul.contain-list{
+  color: #fff;
+  justify-content: center;
+  display: flex;
+}
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    background-color: #1B2241;
+    color: #ECAE1D;
+    padding: 20px 0;
+    height: fit-content;
+    text-align: center;
+}
+
+.contact{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social{
+  margin-top: 10px;
+  margin-bottom:10px
+}
+
+.social-icons{
+  justify-content: center;
+    display: flex;
+}
+
+span ul.contain-list{
+  color: #fff;
+  justify-content: center;
+  display: flex;
+}
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+  .competition img {
+      width: 40%;
+      height: 20%;
+  }
+
+  .social-icons{
+    justify-content: center;
+      display: flex;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }

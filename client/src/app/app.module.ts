@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule,NoopAnimationsModule} from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from "@angular/common/http";
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,7 +35,8 @@ import { AdminPagesComponent } from './admin-pages/admin-pages.component';
 import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { AdminContestantsListComponent } from './admin-contestants-list/admin-contestants-list.component';
 import { AdminContestantCreateComponent } from './admin-contestant-create/admin-contestant-create.component';
-import { AdminContestantComponent } from './admin/admin-contestant/admin-contestant.component';
+import { AdminContestantComponent } from './admin-contestant/admin-contestant.component';
+import { ContestantsSliderComponent } from './contestants-slider/contestants-slider.component'
 
 
 @NgModule({
@@ -62,7 +65,8 @@ import { AdminContestantComponent } from './admin/admin-contestant/admin-contest
     AdminUsersComponent,
     AdminContestantsListComponent,
     AdminContestantCreateComponent,
-    AdminContestantComponent
+    AdminContestantComponent,
+    ContestantsSliderComponent
     
   ],
   imports: [
@@ -81,7 +85,8 @@ import { AdminContestantComponent } from './admin/admin-contestant/admin-contest
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NgbModule
+   
    
   ],
   providers: [],

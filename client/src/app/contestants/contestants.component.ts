@@ -8,6 +8,7 @@ import {ContestantService} from '../_services/contestant.service'
   templateUrl: './contestants.component.html',
   styleUrls: ['./contestants.component.css']
 })
+
 export class ContestantsComponent implements OnInit {
   contestants: [];
   pageTitle: string;
@@ -20,11 +21,25 @@ export class ContestantsComponent implements OnInit {
 
     this.title.setTitle(this.pageTitle)
 
-    this.contestantService.getContestants()
+    this.contestantService.getAllContestants(30)
     .subscribe(data =>{
-      this.contestants = data
+      console.log("Contestants", data.contestants)
+      this.contestants = data.contestants
     })
   }
+
+  getAge(birthDate){
+    if (birthDate){
+      var ageMS = Date.parse(Date()) - Date.parse(birthDate);
+    var age = new Date();
+    age.setTime(ageMS);
+    var ageYear = age.getFullYear() -1970;
+    return ageYear
+    } else{
+      return ageYear = 0
+    }
+     
+  } 
 
   //cast vote
   castVote(id:number){
@@ -34,5 +49,7 @@ export class ContestantsComponent implements OnInit {
       console.log("This id is after 3 seconds", id)
     },5000)
   }
+
+  vote(){}
 
 }

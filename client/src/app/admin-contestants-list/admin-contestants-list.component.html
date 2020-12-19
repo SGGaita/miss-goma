@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-      <h3 class="card-title">Simple Full Width Table</h3>
+      <h3 class="card-title">Contestants list</h3>
 
       <div class="card-tools">
         <ul class="pagination pagination-sm float-right">
@@ -17,52 +17,26 @@
       <table class="table">
         <thead>
           <tr>
-            <th style="width: 10px">#</th>
-            <th>Task</th>
-            <th>Progress</th>
-            <th style="width: 40px">Label</th>
+            <th>#</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>From</th>
+            <th>Age</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1.</td>
-            <td>Update software</td>
-            <td>
-              <div class="progress progress-xs">
-                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-              </div>
-            </td>
-            <td><span class="badge bg-danger">55%</span></td>
+          <tr *ngIf="contestants?.length == 0">
+            <td class="font-italic text-center alert alert-info" colspan="6">
+              No records found </td>
           </tr>
-          <tr>
-            <td>2.</td>
-            <td>Clean database</td>
-            <td>
-              <div class="progress progress-xs">
-                <div class="progress-bar bg-warning" style="width: 70%"></div>
-              </div>
-            </td>
-            <td><span class="badge bg-warning">70%</span></td>
-          </tr>
-          <tr>
-            <td>3.</td>
-            <td>Cron job running</td>
-            <td>
-              <div class="progress progress-xs progress-striped active">
-                <div class="progress-bar bg-primary" style="width: 30%"></div>
-              </div>
-            </td>
-            <td><span class="badge bg-primary">30%</span></td>
-          </tr>
-          <tr>
-            <td>4.</td>
-            <td>Fix and squish bugs</td>
-            <td>
-              <div class="progress progress-xs progress-striped active">
-                <div class="progress-bar bg-success" style="width: 90%"></div>
-              </div>
-            </td>
-            <td><span class="badge bg-success">90%</span></td>
+          <tr *ngFor="let contestant of contestants; let i = index">
+            <td>{{i+1}}</td>
+            <td class="image"><img class="rounded-circle"  src="../../assets/img/contestants/{{contestant.image}}" alt="" width="50px" height="50px"></td>
+            <td>{{contestant.contestant_fname}} {{contestant.contestant_lname}}</td>
+            <td>{{contestant.contestant_location}}</td>
+            <td>{{getAge(contestant.date_of_birth)}}</td>
+            <td></td>
           </tr>
         </tbody>
       </table>

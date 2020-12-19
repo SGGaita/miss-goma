@@ -13,6 +13,7 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component'
 import { LoginComponent } from './login/login.component';
 import {AdminComponent} from './admin/admin.component'
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {AuthGuard} from './_auth/auth.guard'
 
 const routes: Routes = [
 {path: '', component: MainHomeComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
 children:[
   {path: '', redirectTo: 'list', pathMatch: 'full'},
   {path: 'list', component: AdminContestantsListComponent},
-{path: 'create', component: AdminContestantCreateComponent}]}]},
+{path: 'create', component: AdminContestantCreateComponent}]}]
+},
 { path: '**', component: PageNotFoundComponent }
 ];
 

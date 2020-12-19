@@ -1,0 +1,26 @@
+<div clas="container-fluid pt-3" id="competition">
+    <div class="row p-5 competition text-center align-items-center">
+        <div class="col-sm-12  text-center"><h4>{{'LEADERBOARD.Intro' | translate}} </h4></div>
+        
+        <div class="col-sm-12 col-md-6 col-lg-3" *ngFor="let contestant of contestants">
+
+            <div class="card border-0">
+              <div class="card-body">
+                <span>
+                 <a routerLink="../contestant/{{contestant.id}}">
+                  <img src="../../assets/img/contestants/{{contestant.image}}" alt="" width="100%" height="100%">
+                 </a> 
+                </span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 text-center">
+              <button class="btn btn-outline-goma" routerLink="./contestants"  fragment="top">{{'LEADERBOARD.Vote' | translate}}</button>
+            
+          </div>
+        
+        
+    </div>
+    </div>
