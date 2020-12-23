@@ -27,11 +27,12 @@ const getAllContestants = (req, res)=> { // Sending Page Query Parameter is mand
             'c.contestant_description',
             'c.image',
             'c.date_of_birth',
+            'c.status'
 
         ])
         .slice(startValue, endValue)
         .sort({
-            id_contestant: .1
+            status: - 1
         })
         .getAll()
         .then(contest => {

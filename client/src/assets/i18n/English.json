@@ -28,8 +28,8 @@
   },
 
   "LEADERBOARD":{
-    "Intro": "Weekly leaderboard",
-    "Vote" : "Proceed to vote"
+    "Intro": "Progressing to next stage",
+    "View" : "View all participants"
   },
 
   "PRIZE": {
@@ -59,7 +59,9 @@
     "Cast-vote": "Cast Vote",
     "Voting-closed":"Voting Closed",
     "Age": "Age",
-    "Watch":"Watch video"
+    "Watch":"Watch video",
+    "Progress": "Progressing",
+    "Eliminated":"Eliminated"
 
   },
   "THANKYOU": {

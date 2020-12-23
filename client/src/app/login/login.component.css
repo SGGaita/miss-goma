@@ -1,3 +1,8 @@
 .feedback{
     font-size: small;
 }
+
+
+.bg-info{
+   background-color: rgba(22,30,62,.8901960784313725) !important
+}

@@ -17,7 +17,7 @@ export class AdminContestantsListComponent implements OnInit {
   ngOnInit(): void {
     this.title.setTitle(this.pageTitle)
 
-    this.contestantService.getAllContestants(10)
+    this.contestantService.getAllContestants(20)
     .subscribe(data =>{
       console.log("Contestants", data.contestants)
       this.contestants = data.contestants
@@ -37,5 +37,10 @@ export class AdminContestantsListComponent implements OnInit {
     }
      
   } 
+
+
+  delete(id:number){
+
+  }
 
 }

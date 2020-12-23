@@ -6,6 +6,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from "@angular/common/http";
+import {NgxSpinnerModule} from "ngx-spinner"
 
 
 
@@ -37,6 +38,7 @@ import { AdminContestantsListComponent } from './admin-contestants-list/admin-co
 import { AdminContestantCreateComponent } from './admin-contestant-create/admin-contestant-create.component';
 import { AdminContestantComponent } from './admin-contestant/admin-contestant.component';
 import { ContestantsSliderComponent } from './contestants-slider/contestants-slider.component'
+
 
 
 @NgModule({
@@ -85,7 +87,9 @@ import { ContestantsSliderComponent } from './contestants-slider/contestants-sli
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule, 
+    NgxSpinnerModule,
+    NoopAnimationsModule,
    
    
   ],

@@ -9,7 +9,7 @@
   </div>
 
     <!--Admin section-->
-    <div class="wrapper" *ngIf="hasRoute('admin')">
+    <div class="wrapper" *ngIf="hasRoute('admin')"> 
     <!--Return content here-->
 
     <!-- Navbar -->
@@ -249,7 +249,15 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper" >
+  <div class="container-fluid" *ngIf="!auth.isLoggedIn()">
+       
+
+    <router-outlet></router-outlet>
+
+   </div><!--/. container-fluid -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" *ngIf="auth.isLoggedIn()">
     <!-- Content Header (Page header) -->
    
     <!-- /.content-header -->

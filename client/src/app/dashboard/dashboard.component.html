@@ -1,1 +1,58 @@
-<p>dashboard works!</p>
+<div class="card my-5">
+    <div class="card-header">
+      <h3 class="card-title">Contestants list</h3>
+
+      <div class="card-tools">
+     <!--   <ul class="pagination pagination-sm float-right">
+          <li class="page-item"><a class="page-link" href="#">«</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">»</a></li>
+        </ul>-->
+        <span> <a class="btn" (click)="refresh()"> <i class="fas fa-redo p-2   "></i> </a>  </span>
+      </div>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body p-0">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>From</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngIf="contestants?.length == 0">
+            <td class="font-italic text-center alert alert-info" colspan="6">
+              No records found </td>
+          </tr>
+          <tr *ngFor="let contestant of contestants; let i = index">
+            <td>{{i+1}}</td>
+            <td class="image"><img class="rounded-circle"  src="../../assets/img/contestants/{{contestant.image}}" alt="" width="50px" height="50px"></td>
+            <td>{{contestant.contestant_fname}} {{contestant.contestant_lname}}</td>
+            <td>{{contestant.contestant_location}}</td>
+            <td><p class="badge badge-success" *ngIf="contestant.status > 0">Progressing</p>
+            <p class="badge badge-danger" *ngIf="contestant.status < 1">Eliminated</p>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="toggle()">
+                      Update Status
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Eliminated</a>
+                      <a class="dropdown-item" href="#">Progressing</a>
+                    </div>
+                  </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- /.card-body -->
+  </div>

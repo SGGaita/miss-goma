@@ -27,8 +27,8 @@
   },
 
   "LEADERBOARD":{
-    "Intro": "Leaderboard Hebdomadaire",
-    "Vote" : "Procéder au vote"
+    "Intro": "Passer à l'étape suivante ",
+    "View" : "Voir tout"
   },
 
   "PRIZE":{
@@ -59,7 +59,9 @@
     "Cast-vote": "Vote",
     "Voting-closed":"Vote fermé",
     "Age": "Âge",
-    "Watch":"Regarder la vidéo"
+    "Watch":"Regarder la vidéo",
+    "Progress": "Progresser",
+    "Eliminated":"Éliminé"
   },
   "THANKYOU":{
 

@@ -13,10 +13,13 @@ export class ContestantsSliderComponent implements OnInit {
   constructor(private contestantService: ContestantService) { }
 
   ngOnInit(): void {
-    this.contestantService.getAllContestants(4)
+    this.contestantService.getAllContestants(10)
     .subscribe(data =>{
       console.log("Contestants", data.contestants)
       this.contestants = data.contestants
+      this.contestants.filter(x=>{
+         return x.status = 1
+      })
     })
     
   }

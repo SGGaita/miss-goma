@@ -1,3 +1,7 @@
+<ngx-spinner bdColor="rgba(151,149,149,0.4)" size="large" color="yellow" type="ball-clip-rotate-pulse"
+  fullscreen="true">
+  <p style="font-size:20px; color:black ; margin-top:50px">Loading..</p>
+</ngx-spinner>
 <div class="card">
     <div class="card-header">
       <h3 class="card-title">Contestants list</h3>
@@ -36,7 +40,10 @@
             <td>{{contestant.contestant_fname}} {{contestant.contestant_lname}}</td>
             <td>{{contestant.contestant_location}}</td>
             <td>{{getAge(contestant.date_of_birth)}}</td>
-            <td></td>
+            <td>
+              <a class="text-primary" routerLink="./edit">Edit</a> | <a class="text-danger delete" (click)="delete(contestant.id_contestant)">Delete</a>
+
+            </td>
           </tr>
         </tbody>
       </table>
